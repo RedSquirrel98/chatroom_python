@@ -1,20 +1,3 @@
-# import socket
-# HEADERSIZE= 10  # create a fixed buffer that will precede the message: 
-#                 # this buffer contains the length of the message (so that we will know when to stop reading in fixed chunks of it)
-
-# s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-# s.bind((socket.gethostname(), 1236))
-# s.listen(5) 
-# while True:
-#     clientsocket, address = s.accept() # wait forever until someone wants to connect
-#     print(f"connection from {address} has been established!")
-    
-#     msg= "Welcome to the Server!"
-#     msg=f'{len(msg):< {HEADERSIZE}}'+msg # create the message by concatenating a blank buffer with
-#                                          # leftmost spaces denoting message size to the actual message string
-
-#     clientsocket.sendall(bytes(msg, "utf-8"))  # sendall ensures that we are sending the max amount of data in one go
-
 
 import socket
 import select
